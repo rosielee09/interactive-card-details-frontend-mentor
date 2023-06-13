@@ -21,18 +21,46 @@
 <body>
   <main class="mainBgContainer">
 
-    <div class="card">
-      <img src="images/bg-main-desktop.png" alt="Purple background">
-
-      <img class="cardFront"src="/images/bg-card-front.png" alt="bg card front" width="400" height="200">
-     </div>
-    
-
-
     <div class="contentContainer">
-      <div class="imageContainer"></div>
+      <div class="imageContainer">
+        <div class="frontCardContainer">
+          <div id="frontCard">                
+          <!-- <img class="cardFront"src="/images/bg-card-front.png" alt="bg card front" > -->
+          <div id="ovalContainer">
+            <div id="bigOval"></div>
+            <div id="smallOval"></div>
+          </div>
+          <div id="numberContainer">
+            <div id="numbers">
+              <p>9591 6489 6389 1011</p>
+            </div>
+          </div>
+          <div id="nameContainer">
+            <div id="name">
+              <p>Felicia Lane</p>
+            </div>
+            <div id="date">
+              <p>09/26</p>
+            </div>
+
+          </div>
+        </div>             
+      </div>
+        <div class="backCardContainer">
+            <div class="backCard">
+              <img src="images/bg-card-back.png" alt="card-back" >
+              <div class="cvcContainer">
+                <span class="backCardCVC">000</span>
+              </div>
+              
+            </div>
+        </div>
+
+        </div>
+
+      
       <div class="formContainer">
-        <form action="">
+        <form action="" id="cardForm">
             <label for="cardHolderName">
               <h4>Cardholder Name</h4>
               <input type="textbox" name="cardHolderName" id="cardHolderName" placeholder="e.g. Jane Appleseed">
@@ -47,16 +75,15 @@
                   <input type="number" name="cardMonth" min="01" max="12" id="cardMonth">
                   <input type="number" name="cardYear" min="00" max="99" id="cardYear">
                 </label>
-                <label for="cardHolderNumber">
+                <label for="cardHolderNumber" class="cardHolderNumberContainer">
                   <h4>CVC</h4>
                   <input type="number" name="cardHolderNumber" id="cardHolderNumberCVC" min="000" max="999">
                 </label>
               </div>
             <button class="confirmBtn">Confirm</button>
           </form>
-
+        </div>
       </div>
-
     </div>
 
   </main>
@@ -64,5 +91,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="main.js"></script>
 </body>
 </html>
