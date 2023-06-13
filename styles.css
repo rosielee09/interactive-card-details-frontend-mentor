@@ -167,19 +167,23 @@ label {
   height: 400px;
   top: 60%;
   left: 15%;
+  display: flex;
+  flex-direction: column;
   
 }
 
-.cvcContainer{
-    display: flex;
-    
+.cvcContainer {
+    position: absolute;
+    left: 310px;
+    top: 97px;
+      
 }
-
 .backCardCVC {
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;     
-    color: #FFFFFF;
-    
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 2px;     
+    color: #FFFFFF; 
 }
